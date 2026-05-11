@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTodoStore } from '@/store/todo-store'
 import type { Filter, SortBy } from '@/types/todo'
 import { TodoItem } from '@/components/todo-item'
@@ -27,6 +27,10 @@ export function TodoList() {
   const { todos, filter, sortBy, setFilter, setSortBy, clearCompleted, filteredAndSortedTodos } =
     useTodoStore()
   const [addOpen, setAddOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
+  if (!mounted) return null
 
   const displayed = filteredAndSortedTodos()
   const activeCount = todos.filter((t) => !t.completed).length
