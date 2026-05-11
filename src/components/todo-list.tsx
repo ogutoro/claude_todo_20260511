@@ -7,7 +7,6 @@ import { TodoItem } from '@/components/todo-item'
 import { TodoForm } from '@/components/todo-form'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { ScrollArea } from '@/components/ui/scroll-area'
 import {
   Select,
   SelectContent,
@@ -89,13 +88,11 @@ export function TodoList() {
       {displayed.length === 0 ? (
         <EmptyState filter={filter} onAdd={() => setAddOpen(true)} />
       ) : (
-        <ScrollArea className="max-h-[calc(100vh-22rem)]">
-          <div className="flex flex-col gap-2 pr-4">
-            {displayed.map((todo) => (
-              <TodoItem key={todo.id} todo={todo} />
-            ))}
-          </div>
-        </ScrollArea>
+        <div className="flex max-h-[calc(100vh-22rem)] flex-col gap-2 overflow-y-auto">
+          {displayed.map((todo) => (
+            <TodoItem key={todo.id} todo={todo} />
+          ))}
+        </div>
       )}
 
       {/* Clear completed */}
