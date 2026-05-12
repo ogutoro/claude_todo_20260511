@@ -1,0 +1,80 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - heading [level=1] [ref=e129]: TODO
+          - paragraph [ref=e11]: タスクを管理しましょう
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - img [ref=e16]
+              - generic [ref=e19]: 合計
+            - generic [ref=e20]: "1"
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - img [ref=e23]
+              - generic [ref=e25]: 未完了
+            - generic [ref=e26]: "1"
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - img [ref=e29]
+              - generic [ref=e32]: 完了済み
+            - generic [ref=e33]: "0"
+        - generic [ref=e34]:
+          - tablist [ref=e36]:
+            - tab [selected] [ref=e130]: すべて
+            - tab [ref=e131]: 未完了
+            - tab [ref=e132]: 完了済み
+          - generic [ref=e40]:
+            - combobox [ref=e41]:
+              - generic [ref=e42]: created
+              - img: ▼
+            - textbox [ref=e43]: created
+            - button [ref=e133]:
+              - img
+              - text: 新しいタスク
+        - generic [ref=e115]:
+          - checkbox [ref=e116]
+          - checkbox [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e120]: E2Eテストタスク（高優先度）
+              - generic [ref=e121]: 高
+            - paragraph [ref=e122]: PlaywrightによるE2Eテストで追加したタスクです
+          - button [ref=e134]:
+            - img [ref=e124]
+            - generic [ref=e128]: メニュー
+  - button "Open Next.js Dev Tools" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+  - alert [ref=e62]
+  - dialog "新しいタスク" [active] [ref=e138]:
+    - heading "新しいタスク" [level=2] [ref=e140]
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - generic [ref=e143]: タイトル *
+        - textbox "タイトル *" [ref=e144]:
+          - /placeholder: タスクのタイトル
+          - text: 買い物リスト作成（中優先度）
+      - generic [ref=e145]:
+        - generic [ref=e146]: 説明（任意）
+        - textbox "説明（任意）" [ref=e147]:
+          - /placeholder: 詳細を入力...
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - generic [ref=e150]: 優先度
+          - combobox [ref=e151]:
+            - generic [ref=e152]: medium
+            - img: ▼
+          - textbox [ref=e153]: medium
+        - generic [ref=e154]:
+          - generic [ref=e155]: 期限日（任意）
+          - textbox "期限日（任意）" [ref=e156]
+      - generic [ref=e157]:
+        - button "キャンセル" [ref=e158]
+        - button "追加" [ref=e162]
+    - button "Close" [ref=e159]:
+      - img
+      - generic [ref=e160]: Close

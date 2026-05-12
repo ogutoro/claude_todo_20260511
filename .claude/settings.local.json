@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "WebFetch(domain:github.com)",
+      "Bash(python3 *)",
+      "mcp__Playwright__browser_take_screenshot",
+      "mcp__Playwright__browser_snapshot",
+      "mcp__Playwright__browser_type",
+      "mcp__Playwright__browser_click"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - heading "TODO" [level=1] [ref=e444]
+          - paragraph [ref=e11]: タスクを管理しましょう
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - img [ref=e16]
+              - generic [ref=e19]: 合計
+            - generic [ref=e20]: "2"
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - img [ref=e23]
+              - generic [ref=e25]: 未完了
+            - generic [ref=e26]: "2"
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - img [ref=e29]
+              - generic [ref=e32]: 完了済み
+            - generic [ref=e33]: "0"
+        - generic [ref=e34]:
+          - tablist [ref=e36]:
+            - tab "すべて" [selected] [ref=e445]
+            - tab "未完了" [ref=e446]
+            - tab "完了済み" [ref=e447]
+          - generic [ref=e40]:
+            - combobox [ref=e41]:
+              - generic [ref=e42]: created
+              - img: ▼
+            - textbox [ref=e43]: created
+            - button "新しいタスク" [ref=e448]:
+              - img
+              - text: 新しいタスク
+        - generic [ref=e114]:
+          - generic [ref=e449]:
+            - checkbox [ref=e450]
+            - checkbox [ref=e451]
+            - generic [ref=e453]:
+              - generic [ref=e454]: 緊急対応タスク（高優先度）
+              - generic [ref=e455]: 高
+            - button "メニュー" [ref=e456]:
+              - img [ref=e457]
+              - generic [ref=e461]: メニュー
+          - generic [ref=e286]:
+            - checkbox [ref=e287]
+            - checkbox [ref=e288]
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - generic [ref=e291]: 買い物リスト作成（中優先度）【編集済み】
+                - generic [ref=e292]: 中
+              - paragraph [ref=e352]: 編集機能のテスト用に説明を追加しました
+            - button "メニュー" [active] [ref=e462]:
+              - img [ref=e294]
+              - generic [ref=e298]: メニュー
+  - button "Open Next.js Dev Tools" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+  - alert [ref=e62]
