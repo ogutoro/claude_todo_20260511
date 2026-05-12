@@ -1,27 +1,21 @@
 'use client'
 
 import { Moon, Sun } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { useTheme } from './theme-provider'
 import { Button } from './ui/button'
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark')
-    } else if (theme === 'dark') {
-      setTheme('light')
-    } else {
-      // system の場合は light に切り替える
-      setTheme('light')
-    }
+    setTheme(theme === 'dark' ? 'light' : 'dark')
   }
-
-  const isDark = theme === 'dark' || 
-    (theme === 'system' && 
-     typeof window !== 'undefined' && 
-     window.matchMedia('(prefers-color-scheme: dark)').matches)
 
   return (
     <Button
@@ -31,11 +25,9 @@ export function ThemeToggle() {
       aria-label="テーマ切り替え"
       className="h-9 w-9"
     >
-      {isDark ? (
-        <Sun className="h-[1.2rem] w-[1.2rem]" />
-      ) : (
-        <Moon className="h-[1.2rem] w-[1.2rem]" />
-      )}
+      {/* マウント前はサーバーと同じ出力を保証するため両アイコンを非表示 */}
+      <Sun className={`h-[1.2rem] w-[1.2rem] ${mounted && theme === 'dark' ? 'block' : 'hidden'}`} />
+      <Moon className={`h-[1.2rem] w-[1.2rem] ${mounted && theme === 'dark' ? 'hidden' : 'block'}`} />
     </Button>
   )
 }
