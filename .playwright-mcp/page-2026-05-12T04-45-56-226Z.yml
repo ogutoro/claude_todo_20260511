@@ -1,0 +1,76 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - heading [level=1] [ref=e63]: TODO
+          - paragraph [ref=e11]: タスクを管理しましょう
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - img [ref=e16]
+              - generic [ref=e19]: 合計
+            - generic [ref=e20]: "0"
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - img [ref=e23]
+              - generic [ref=e25]: 未完了
+            - generic [ref=e26]: "0"
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - img [ref=e29]
+              - generic [ref=e32]: 完了済み
+            - generic [ref=e33]: "0"
+        - generic [ref=e34]:
+          - tablist [ref=e36]:
+            - tab [selected] [ref=e64]: すべて
+            - tab [ref=e65]: 未完了
+            - tab [ref=e66]: 完了済み
+          - generic [ref=e40]:
+            - combobox [ref=e41]:
+              - generic [ref=e42]: created
+              - img: ▼
+            - textbox [ref=e43]: created
+            - button [ref=e67]:
+              - img
+              - text: 新しいタスク
+        - generic [ref=e45]:
+          - img [ref=e46]
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: タスクがありません
+            - paragraph [ref=e51]: 新しいタスクを追加してみましょう！
+          - button [ref=e68]:
+            - img
+            - text: タスクを追加
+  - button "Open Next.js Dev Tools" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+  - alert [ref=e62]
+  - dialog "新しいタスク" [ref=e72]:
+    - heading "新しいタスク" [level=2] [ref=e74]
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]: タイトル *
+        - textbox "タイトル *" [active] [ref=e78]:
+          - /placeholder: タスクのタイトル
+      - generic [ref=e79]:
+        - generic [ref=e80]: 説明（任意）
+        - textbox "説明（任意）" [ref=e81]:
+          - /placeholder: 詳細を入力...
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]: 優先度
+          - combobox [ref=e85]:
+            - generic [ref=e86]: medium
+            - img: ▼
+          - textbox [ref=e87]: medium
+        - generic [ref=e88]:
+          - generic [ref=e89]: 期限日（任意）
+          - textbox "期限日（任意）" [ref=e90]
+      - generic [ref=e91]:
+        - button "キャンセル" [ref=e92]
+        - button "追加" [disabled]
+    - button "Close" [ref=e93]:
+      - img
+      - generic [ref=e94]: Close

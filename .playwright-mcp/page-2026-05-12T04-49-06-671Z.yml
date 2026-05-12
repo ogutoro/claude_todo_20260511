@@ -1,0 +1,86 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - heading "TODO" [level=1] [ref=e229]
+          - paragraph [ref=e11]: タスクを管理しましょう
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - img [ref=e16]
+              - generic [ref=e19]: 合計
+            - generic [ref=e20]: "3"
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - img [ref=e23]
+              - generic [ref=e25]: 未完了
+            - generic [ref=e26]: "2"
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - img [ref=e29]
+              - generic [ref=e32]: 完了済み
+            - generic [ref=e33]: "1"
+        - generic [ref=e34]:
+          - tablist [ref=e36]:
+            - tab "すべて" [selected] [ref=e230]
+            - tab "未完了" [ref=e231]
+            - tab "完了済み" [ref=e232]
+          - generic [ref=e40]:
+            - combobox [ref=e41]:
+              - generic [ref=e42]: created
+              - img: ▼
+            - textbox [ref=e43]: created
+            - button "新しいタスク" [ref=e233]:
+              - img
+              - text: 新しいタスク
+        - generic [ref=e114]:
+          - generic [ref=e273]:
+            - checkbox [ref=e274]
+            - checkbox [ref=e275]
+            - generic [ref=e277]:
+              - generic [ref=e278]: ドキュメント整理（低優先度）
+              - generic [ref=e279]: 低
+            - button "メニュー" [ref=e280]:
+              - img [ref=e281]
+              - generic [ref=e285]: メニュー
+          - generic [ref=e286]:
+            - checkbox [ref=e287]
+            - checkbox [ref=e288]
+            - generic [ref=e290]:
+              - generic [ref=e291]: 買い物リスト作成（中優先度）
+              - generic [ref=e292]: 中
+            - button "メニュー" [expanded] [ref=e293]:
+              - img [ref=e294]
+              - generic [ref=e298]: メニュー
+            - menu "メニュー" [active] [ref=e303]:
+              - menuitem "編集" [ref=e304]:
+                - img
+                - text: 編集
+              - separator [ref=e305]
+              - menuitem "削除" [ref=e306]:
+                - img
+                - text: 削除
+          - generic [ref=e256]:
+            - checkbox [checked] [ref=e257]:
+              - img [ref=e259]
+            - checkbox [checked] [ref=e261]
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - generic [ref=e264]: E2Eテストタスク（高優先度）
+                - generic [ref=e265]: 高
+              - paragraph [ref=e266]: PlaywrightによるE2Eテストで追加したタスクです
+            - button "メニュー" [ref=e267]:
+              - img [ref=e268]
+              - generic [ref=e272]: メニュー
+        - separator [ref=e252]
+        - generic [ref=e253]:
+          - generic [ref=e254]: 1 件の完了済みタスク
+          - button "完了済みを削除" [ref=e255]:
+            - img
+            - text: 完了済みを削除
+  - button "Open Next.js Dev Tools" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+  - alert [ref=e62]
